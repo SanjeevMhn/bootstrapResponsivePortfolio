@@ -1,0 +1,114 @@
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+
+.side-nav{
+	width: 20rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: #000;
+	z-index: 1000;
+	transition: all 300ms ease-in-out;
+}
+
+.side-nav .profile-img{
+	width: 7rem;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.side-nav .profile-img::after{
+	content:  "";
+	height: 110%;
+	width: 110%;
+	background-color: lightgray;
+	position: absolute;
+	border-radius: 100%;
+	z-index: -1;
+	opacity: .5;
+}
+.side-nav .social-media-links{
+	width:  80%;
+}
+.side-nav .social-media-links .list-items .item{
+	background-color: gray;
+	border-radius: 100%;
+	height: 2.5rem;
+	width: 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color:  #fff;
+	transition: all 200ms ease-in-out;
+}
+
+.side-nav .social-media-links .list-items .item .item-link{
+	text-decoration: none;
+}
+
+.side-nav .social-media-links .list-items .item:hover{
+	background-color: dodgerblue;
+}
+.side-nav .main-nav{
+	width: 100%;
+}
+.side-nav .main-nav .nav-item:hover .nav-link i{
+	color: dodgerblue;
+}
+.side-nav .main-nav .nav-item:hover .nav-link span{
+	color: #fff;
+}
+.home-section::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom:  0;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: .2;
+}
+.home-section{
+	width: 100%;
+	height: 100vh;
+	background: url('../images/profile/profile-large2.jpg') center;
+	background-size: cover;
+	position: relative;
+	z-index: 50;
+}
+
+.home-section .container .dev-name{
+	color: #fff;
+	z-index: 10;
+}
+
+.home-section .container #demo{
+	height: 5rem;
+	width: 100%;
+	z-index: 10;
+	text-decoration: underline;	
+}
+
+.menu-button{
+	position: absolute;
+	z-index: 200;
+	top: 1rem;
+	right: 1rem;
+}
+
+@media (max-width: 990px){
+	.side-nav{
+		left: -20rem;
+	}
+
+}
+
+.left-align{
+	left: 0;
+}
