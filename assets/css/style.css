@@ -1,12 +1,13 @@
 *,*::before,*::after{
 	box-sizing: border-box;
 }
-
+body{
+	position: relative;
+}
 .side-nav{
 	width: 20rem;
 	position: fixed;
 	top: 0;
-	left: 0;
 	bottom: 0;
 	background-color: #000;
 	z-index: 1000;
@@ -79,6 +80,7 @@
 	height: 100vh;
 	background: url('../images/profile/profile-large2.jpg') center;
 	background-size: cover;
+	background-attachment: fixed;
 	position: relative;
 	z-index: 50;
 }
@@ -96,15 +98,24 @@
 }
 
 .menu-button{
-	position: absolute;
+	position: fixed;
 	z-index: 200;
 	top: 1rem;
 	right: 1rem;
+	cursor: pointer;
+}
+
+.about-section{
+	margin-left: 20rem;
+	position: relative;
 }
 
 @media (max-width: 990px){
 	.side-nav{
 		left: -20rem;
+	}
+	.about-section{
+		margin-left: 0;
 	}
 
 }
@@ -112,3 +123,8 @@
 .left-align{
 	left: 0;
 }
+
+.skills{
+	background-color: #c5cef3;
+}
+

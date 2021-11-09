@@ -22,5 +22,5 @@ const menuDisplay = document.querySelector(".menu-button");
 const sideNav = document.querySelector(".side-nav");
 menuDisplay.addEventListener("click",function(){
 		sideNav.classList.toggle("left-align");
-
+		//console.log("clicked");
 })
