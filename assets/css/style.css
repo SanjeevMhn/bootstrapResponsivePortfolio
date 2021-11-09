@@ -61,6 +61,11 @@
 .side-nav .main-nav .nav-item:hover .nav-link span{
 	color: #fff;
 }
+
+.side-nav .copyright-section{
+	position: absolute;
+	bottom: 0;
+}
 .home-section::before{
 	content: "";
 	position: absolute;
