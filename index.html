@@ -7,15 +7,22 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="menu-button d-lg-none d-sm-flex bg-primary flex-sm-column align-items-sm-center justify-content-sm-center p-2 m-0 border border-primary rounded">
-		<i class="bi bi-list h4 font-weight-bold text-light p-0 m-0"></i>
+	<div class="menu-button d-lg-none d-sm-flex bg-primary flex-sm-column align-items-sm-center justify-content-sm-center p-2 m-0">
+		<i class="bi bi-list h4 font-weight-bold p-0 m-0 hamburger"></i>
+		<i class="bi bi-x-lg h4 font-weight-bold p-0 m-0 close"></i>
 	</div>
+	<a href="#home" class="back-to-top p-2 m-0 bg-primary">
+		<i class="bi bi-arrow-up h4 font-weight-bold p-0 m-0 up-arrow"></i>
+	</a>
 	<header class="side-nav text-light">
 		<div class="container d-flex flex-column align-items-center justify-content-center pt-4">
 			<div class="profile-img">
-				<img src="./assets/images/profile/profile.png" alt="img" class="img-fluid border border-dark rounded-circle bg-success">
+				<img src="./assets/images/profile/profile-large2.jpg" alt="img" class="img-fluid border border-dark rounded-circle bg-success">
 			</div>
 			<h3 class="profile-name font-weight-bold my-3">
 				Alex Smith
@@ -91,6 +98,7 @@
 			<h1 class="dev-name font-weight-bold display-3">Alex Smith</h1>
 			<p class="h1 font-weight-bold text-light" id="demo"></p>
 		</div>
+		<img src="./assets/images/profile/profile-large2.jpg" alt="" class="bck-img" loading="lazy">
 	</section>
 
 	<section class="about-section" id="about">
@@ -463,13 +471,13 @@
 	<section class="services py-5" id="services">
 		<div class="container">
 			<div class="header-text h1">Services</div>
-			<div class="desc-text">
+			<div class="desc-text my-4">
 				Lorem ipsum dolor sit amet consectetur adipisicing, elit. Vel exercitationem ipsa, dicta ullam, veritatis a corporis! Ipsum error provident, deleniti! Quo possimus quam soluta rerum? Ipsam culpa possimus inventore maxime numquam beatae corporis provident facilis.
 			</div>
 
-			<div class="row services-list">
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="service-content d-flex">
+			<div class="row services-list m-0">
+				<div class="col-lg-4 col-md-6 col-sm-12 p-0 mb-4">
+					<div class="service-content d-flex m-0 p-0">
 						<div class="icon d-flex flex-row align-items-center justify-content-center">
 							<i class="bi bi-briefcase h3 mt-2"></i>
 						</div>
@@ -480,10 +488,10 @@
 					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="service-content d-flex">
+				<div class="col-lg-4 col-md-6 col-sm-12 p-0 mb-4">
+					<div class="service-content d-flex p-0">
 						<div class="icon d-flex flex-row align-items-center justify-content-center">
-							<i class="bi bi-briefcase h3 mt-2"></i>
+							<i class="bi bi-card-checklist h3 mt-2"></i>
 						</div>
 						<div class="text-content p-0">
 							<h5 class="font-weight-bold">Lorem, ipsum.</h5>
@@ -492,10 +500,10 @@
 					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="service-content d-flex">
+				<div class="col-lg-4 col-md-6 col-sm-12 p-0 mb-4">
+					<div class="service-content d-flex p-0">
 						<div class="icon d-flex flex-row align-items-center justify-content-center">
-							<i class="bi bi-briefcase h3 mt-2"></i>
+							<i class="bi bi-bar-chart h3 mt-2"></i>
 						</div>
 						<div class="text-content p-0">
 							<h5 class="font-weight-bold">Lorem, ipsum.</h5>
@@ -504,10 +512,10 @@
 					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="service-content d-flex">
+				<div class="col-lg-4 col-md-6 col-sm-12 p-0 mb-4">
+					<div class="service-content d-flex p-0">
 						<div class="icon d-flex flex-row align-items-center justify-content-center">
-							<i class="bi bi-briefcase h3 mt-2"></i>
+							<i class="bi bi-binoculars h3 mt-2"></i>
 						</div>
 						<div class="text-content p-0">
 							<h5 class="font-weight-bold">Lorem, ipsum.</h5>
@@ -517,10 +525,10 @@
 				</div>
 
 
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="service-content d-flex">
+				<div class="col-lg-4 col-md-6 col-sm-12 p-0 mb-4">
+					<div class="service-content d-flex p-0">
 						<div class="icon d-flex flex-row align-items-center justify-content-center">
-							<i class="bi bi-briefcase h3 mt-2"></i>
+							<i class="bi bi-brightness-high h3 mt-2"></i>
 						</div>
 						<div class="text-content p-0">
 							<h5 class="font-weight-bold">Lorem, ipsum.</h5>
@@ -529,10 +537,10 @@
 					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="service-content d-flex">
+				<div class="col-lg-4 col-md-6 col-sm-12 p-0 mb-4">
+					<div class="service-content d-flex p-0">
 						<div class="icon d-flex flex-row align-items-center justify-content-center">
-							<i class="bi bi-briefcase h3 mt-2"></i>
+							<i class="bi bi-credit-card h3 mt-2"></i>
 						</div>
 						<div class="text-content p-0">
 							<h5 class="font-weight-bold">Lorem, ipsum.</h5>
@@ -548,6 +556,173 @@
 		</div>
 	</section>
 
+	<section class="testimonials py-5">
+		<div class="container">
+			<div class="header-text h1">Testimonials</div>
+			<div class="desc-text my-4">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem, cupiditate odit veniam obcaecati sequi laudantium, nam fugiat ducimus dicta reiciendis autem accusantium praesentium est porro quia repudiandae repellendus. Quisquam ducimus recusandae totam odit, molestiae quaerat veniam ex reprehenderit beatae! Ab, hic iste voluptatem libero ratione quod, officiis voluptatibus dolorem.
+			</div>
+			<div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+				<!-- <ol type="disc" class="carousel-indicators p-3 m-3">
+					<li class="active" data-target="#testimonial-carousel" data-slide-to="0"></li>
+					<li data-target="#testimonial-carousel" data-slide-to="1"></li>
+					<li data-target="#testimonial-carousel" data-slide-to="2"></li>
+					<li data-target="#testimonial-carousel" data-slide-to="3"></li>
+				</ol> -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="user-review d-flex flex-column justify-content-center align-items-center">
+							<div class="message-box my-4">
+								<p class="font-italic text-dark">
+									"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa natus doloremque corporis ullam consequuntur fugiat aperiam consectetur voluptates reiciendis rem."
+								</p>
+							</div>
+							<div class="msg-img my-2">
+								<img src="https://randomuser.me/api/portraits/men/45.jpg" alt="">
+							</div>
+							<div class="user-info text-dark text-center">
+								<h5 class="user-name m-0">Josh Daine</h5>
+								<p>Freelancer</p>
+							</div>	
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="user-review d-flex flex-column justify-content-center align-items-center">
+							<div class="message-box my-4">
+								<p class="font-italic text-dark">
+									"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa natus doloremque corporis ullam consequuntur fugiat aperiam consectetur voluptates reiciendis rem."
+								</p>
+							</div>
+							<div class="msg-img my-2">
+								<img src="https://randomuser.me/api/portraits/men/35.jpg" alt="">
+							</div>
+							<div class="user-info text-dark text-center">
+								<h5 class="user-name m-0">David Wargner</h5>
+								<p>CEO</p>
+							</div>	
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="user-review d-flex flex-column justify-content-center align-items-center">
+							<div class="message-box my-4">
+								<p class="font-italic text-dark">
+									"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa natus doloremque corporis ullam consequuntur fugiat aperiam consectetur voluptates reiciendis rem."
+								</p>
+							</div>
+							<div class="msg-img my-2">
+								<img src="https://randomuser.me/api/portraits/women/45.jpg" alt="">
+							</div>
+							<div class="user-info text-dark text-center">
+								<h5 class="user-name m-0">Kathy Baker</h5>
+								<p>Content Writer</p>
+							</div>	
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="user-review d-flex flex-column justify-content-center align-items-center">
+							<div class="message-box my-4">
+								<p class="font-italic text-dark">
+									"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa natus doloremque corporis ullam consequuntur fugiat aperiam consectetur voluptates reiciendis rem."
+								</p>
+							</div>
+							<div class="msg-img my-2">
+								<img src="https://randomuser.me/api/portraits/men/46.jpg" alt="">
+							</div>
+							<div class="user-info text-dark text-center">
+								<h5 class="user-name m-0">Will Tennison</h5>
+								<p>Freelancer</p>
+							</div>	
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="contact py-5 mb-4">
+		<div class="container">
+			<div class="header-text h1">Contact</div>
+			<div class="desc-text my-4">
+				Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Molestias ducimus inventore laborum sit atque facere perferendis illum quasi praesentium cupiditate, beatae eaque, nemo. Odit, nemo?
+			</div>
+			<div class="container">
+
+					<div class="row location-message">
+						<div class="col-lg-6 col-sm-12 mb-4">
+							<div class="wrapper info-address p-3 border rounded">
+								<div class="location d-flex my-2">
+									<div class="icon-address d-flex flex-column align-items-center justify-content-center">
+										<i class="bi bi-geo-alt h4 m-0 p-0"></i>
+									</div>
+									<div class="details">
+										<h5 class="p-0 m-0">Location:</h5>
+										<p>Kathmandu, Nepal</p>
+									</div>
+								</div>
+
+								<div class="email d-flex my-2">
+									<div class="icon-email d-flex flex-column align-items-center justify-content-center">
+										<i class="bi bi-envelope h4 m-0 p-0 "></i>
+									</div>
+									<div class="details">
+										<h5 class="p-0 m-0">Email:</h5>
+										<p>xyz@gamil.com</p>
+									</div>
+								</div>
+
+								<div class="call d-flex my-2">
+									<div class="icon-call d-flex flex-column align-items-center justify-content-center">
+										<i class="bi bi-phone h4 m-0 p-0"></i>
+									</div>
+									<div class="details">
+										<h5 class="p-0 m-0">Call:</h5>
+										<p>+1 234 569067</p>
+									</div>
+								</div>
+
+								<div class="map-details">
+									<img src="./assets/images/maps/map.png" alt="">
+								</div>
+							</div>
+					</div>
+
+					<div class="col-lg-6 col-sm-12 mb-4">
+						<div class="wrapper info-address p-3 border rounded">
+							<form action="#" class="main-form text-center">
+								<div class="row">
+									<div class="col-md-6 col-sm-12">
+										<div class="form-group text-left">
+											<label for="name">Your Name</label>
+											<input type="text" name="name" class="form-control">
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-12">
+										<div class="form-group text-left">
+											<label for="email">Your Email</label>
+											<input type="email" name="email" class="form-control">
+										</div>
+									</div>
+								</div>
+								<div class="form-group text-left">
+									<label for="subject">Subject</label>
+									<input type="text" name="subject" class="form-control">
+								</div>
+								<div class="form-group text-left">
+									<label for="message">Message</label>
+									<textarea name="message" rows="10" class="form-control"></textarea>
+								</div>
+								<button class="btn btn-primary text-light text-center">Send Message</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 	<script src="./assets/js/app.js"></script>

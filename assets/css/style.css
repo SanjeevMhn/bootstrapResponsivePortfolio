@@ -6,6 +6,7 @@ html{
 }
 body{
 	position: relative;
+	font-family: 'Roboto',sans-serif;
 }
 .side-nav{
 	width: 20rem;
@@ -19,11 +20,19 @@ body{
 
 .side-nav .profile-img{
 	width: 7rem;
+	height: 7rem;
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
+.side-nav .profile-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 .side-nav .profile-img::after{
 	content:  "";
 	height: 110%;
@@ -83,10 +92,17 @@ body{
 	width: 100%;
 	height: 100vh;
 	/* background: url('../images/profile/profile-large2.jpg') center; */
-	background-size: cover;
-	background-attachment: fixed;
 	position: relative;
 	z-index: 50;
+	overflow: hidden;
+}
+
+.home-section .bck-img{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;	
+	z-index: -1;
 }
 
 .home-section .container .dev-name{
@@ -101,18 +117,38 @@ body{
 	text-decoration: underline;	
 }
 
-.menu-button{
+.menu-button,.back-to-top{
 	position: fixed;
 	z-index: 200;
-	top: 0.5rem;
-	right: 0.5rem;
+	right: 0.25rem;
 	cursor: pointer;
+	z-index: 800;
+	border-radius: 8px;
+}
+
+.menu-button{
+	top: 0.25rem;
+}
+
+.back-to-top{
+	bottom: 0.5rem;
+	text-decoration: none;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-button i,
+.back-to-top i{
+	text-decoration: none;
 }
 
 .about-section,
 .resume,
 .portfolio,
-.services{
+.services,
+.testimonials,
+.contact{
 	margin-left: 20rem;
 	position: relative;
 }
@@ -124,7 +160,9 @@ body{
 	.about-section,
 	.resume,
 	.portfolio,
-	.services{
+	.services,
+	.testimonials,
+	.contact{
 		margin-left: 0;
 	}
 
@@ -135,7 +173,8 @@ body{
 }
 
 .skills,
-.portfolio{
+.portfolio,
+.testimonials{
 	background-color: #c5cef3;
 }
 
@@ -209,4 +248,84 @@ body{
 	border: 1px solid dodgerblue;
 	color: dodgerblue;
 	background: #fff;
+}
+
+.close{
+	display: none;
+	color: #fff;
+
+}
+.hamburger,.up-arrow{
+	display: flex;
+	color: #fff;
+}
+.noDisplay{
+	display: none;
+}
+.display{
+	display: flex;
+}
+
+.message-box{
+	width: 18rem;
+	padding: 0.5rem 1rem;
+	background: #fff;
+	border-radius: 8px;
+	display: inline-block;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0 5px 30px grey;
+}
+
+.message-box::after{
+	content: "";
+	height: 0;
+	width: 0;
+	border-left: 1.5rem solid transparent;
+	border-right: 1.5rem solid transparent;
+	border-top: 1.5rem solid #fff;
+	position: absolute;
+	bottom: -1.4rem;
+}
+
+.msg-img{
+	width: 6rem;
+	height: 6rem;
+	background: red;
+	border-radius: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.msg-img img{
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.icon-address,
+.icon-email,
+.icon-call{
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 100%;
+	margin-right: 1rem;
+	background: lightskyblue;
+	color: dodgerblue;
+	border: 1px solid lightskyblue;
+	transition: all 400ms ease-in-out;
+}
+
+.info-address{
+	box-shadow: 0px 0px 30px lightgray;
+}
+
+.map-details{
+	overflow: hidden;
+	height: 17.99rem;
 }
